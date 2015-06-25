@@ -8,6 +8,13 @@
 //   content: "@{variable}";
 // }
 
+// B&W colors
+
+@bw-white: white;
+@bw-dark-grey: #333;
+@bw-light-grey: #dedede;
+@bw-pink: #e225a7;
+
 // Solar colours
 
 @solar-color-base01: #93A1A1;
@@ -18,9 +25,9 @@
 @solar-color-base04: #00222D;
 @solar-color-base0: #839496;
 @solar-color-base1: #93a1a1;
-@solar-color-base2: #eee8d5;
+@solar-color-base2: @bw-dark-grey; // #eee8d5;
 @solar-color-base3: #fdf6e3;
-@solar-color-cyan:  #2aa198;
+@solar-color-cyan:  @bw-white; //#2aa198;
 
 
 // Adjust -----------------------------------
@@ -77,7 +84,7 @@
 
 @app-background-color:             darken(@level-3-color, 2%);
 
-@tree-view-background-color:       @level-3-color;
+@tree-view-background-color:       white; //@level-3-color;
 @tree-view-border-color:           @base-border-color;
 
 @tab-background-color:             @level-3-color;
@@ -129,7 +136,7 @@
 
 @progress-background-color:        @base-accent-color;
 
-@checkbox-background-color:        fade(@base-accent-color, 33%);
+@checkbox-background-color:        @bw-white; //fade(@base-accent-color, 33%);
 
 @scrollbar-color:                  @level-1-color;
 @scrollbar-background-color:       @level-3-color; // replaced `transparent` with a solid color to test https://github.com/atom/one-light-ui/issues/4
@@ -143,7 +150,7 @@
 
 // Text Colors -------------------------------------
 
-@text-color: @solar-color-base2;
+@text-color: white; //@solar-color-base2;
 @text-color-subtle: @solar-color-base1;
 @text-color-faded: fade(@text-color, 20%);
 @text-color-highlight: @solar-color-base3;
@@ -172,7 +179,7 @@ html { font-size: 11px; }   // base font-size
 @component-line-height:   @font-size*2;
 @component-icon-padding:  @component-padding/3.3;
 @component-icon-size:     16px; // needs to stay 16px to look sharpest
-@component-border-radius: 3px;
+@component-border-radius: 0px;
 
 @tab-height:              @component-padding*2;
 

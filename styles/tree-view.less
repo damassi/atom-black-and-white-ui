@@ -15,8 +15,16 @@
     }
   }
 
-  .selected:before {
-    background: @background-color-highlight;
+  .list-item {
+    &.selected .name {
+      color: white;
+    }
+  }
+
+  .selected {
+    &:before {
+      background: @background-color-highlight;
+    }
   }
 }
 
@@ -42,6 +50,7 @@
 // icon
 .list-group .icon,
 .list-tree .icon {
+  color: @bw-dark-grey;
   display: inline-block;
   height: inherit;
   &::before {
@@ -49,5 +58,38 @@
     line-height: inherit;
     height: inherit;
     vertical-align: top;
+  }
+}
+
+// Hover color of selected folder
+.list-tree {
+  .selected {
+    .icon-file-directory {
+      color: white;
+    }
+  }
+}
+
+.directory.project-root.selected {
+  .header .icon {
+    color: @bw-light-grey;
+  }
+}
+
+// Arrow on selected folder
+.list-tree li.list-nested-item.selected.status-modified > .list-item {
+  color: white;
+
+  .name {
+    color: @bw-light-grey;
+  }
+}
+
+// Modified folder arrow
+.list-tree li.list-nested-item.status-modified > .list-item {
+  color: @bw-dark-grey;
+
+  .name {
+    color: @bw-dark-grey;
   }
 }

@@ -1,10 +1,10 @@
 {
-  "name": "solo-one-dark-ui",
+  "name": "black-and-white-ui",
   "theme": "ui",
   "version": "0.1.1",
-  "description": "Solo One dark UI theme (Solarised)",
+  "description": "A simple B&W UI theme",
   "license": "MIT",
-  "repository": "https://github.com/soloman1124/solo-one-dark-ui",
+  "repository": "https://github.com/damass/atom-black-and-white-ui",
   "engines": {
     "atom": ">0.40.0"
   }
