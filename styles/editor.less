@@ -1,10 +1,15 @@
 atom-text-editor[mini] {
   padding-left: 0;
-  border-radius: @component-border-radius;
   color: @text-color-highlight;
-  border: 1px solid @input-border-color;
   background-color: @input-background-color;
   padding-left: @component-padding/2;
+
+  border-color: transparent;
+  border-radius: 2px;
+
+  &::shadow .cursor {
+    border-color: #dedede;
+  }
 
   &,
   &::shadow {
@@ -23,9 +28,14 @@ atom-text-editor[mini] {
   &.is-focused,
   &.is-focused::shadow {
     .focus();
+
+    border-color: transparent;
+    box-shadow: none;
+
     background-color: @input-background-color-focus;
     .selection .region {
       background-color: @input-selection-color-focus;
     }
+
   }
 }
