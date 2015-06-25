@@ -4,3 +4,15 @@
 .status-modified { .text(warning); } // orange
 .status-removed  { .text(error); }   // red
 .status-renamed  { .text(info); }    // blue
+
+// BW Overrides ---------------------------------
+
+.list-item.status-added .name {
+  color: @bw-light-blue;
+  text-decoration: underline;
+}
+
+.list-item.status-modified .name {
+  color: @bw-light-pink;
+  text-decoration: underline;
+}
