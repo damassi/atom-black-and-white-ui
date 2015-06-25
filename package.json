@@ -1,7 +1,7 @@
 {
   "name": "black-and-white-ui",
   "theme": "ui",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A simple B&W UI theme",
   "license": "MIT",
   "repository": "https://github.com/damassi/atom-black-and-white-ui",
