@@ -121,7 +121,7 @@
       &::before {
         content: "\f052";
         display: inline-block;
-        color: inherit;
+        color: white;
       }
     }
 
@@ -204,4 +204,9 @@
 atom-pane.active .tab-bar:empty:before,
 atom-pane.active .tab.active:before {
   transform: scaleY(1);
+}
+
+// Markdown pane active text color
+.tab.active .icon-markdown {
+  color: @bw-dark-grey;
 }
