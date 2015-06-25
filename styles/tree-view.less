@@ -61,24 +61,27 @@
   }
 }
 
-// Hover color of selected folder
-.list-tree {
-  .selected {
-    .icon-file-directory {
-      color: white;
+.list-group .icon,
+.list-tree .selected > .icon {
+    color: @bw-light-grey;
+}
+
+// Top most directory
+.directory.project-root {
+  &.selected {
+    > .header > .icon {
+      color: @bw-light-grey;
     }
   }
 }
 
-.directory.project-root.selected {
-  .header .icon {
-    color: @bw-light-grey;
-  }
+.directory.list-nested-item.selected > .header .name {
+  color: white;
 }
 
 // Arrow on selected folder
 .list-tree li.list-nested-item.selected.status-modified > .list-item {
-  color: white;
+  color: @bw-light-grey;// white;
 
   .name {
     color: @bw-light-grey;
