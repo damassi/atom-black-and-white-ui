@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "description": "A simple B&W UI theme",
   "license": "MIT",
-  "repository": "https://github.com/damass/atom-black-and-white-ui",
+  "repository": "https://github.com/damassi/atom-black-and-white-ui",
   "engines": {
     "atom": ">0.40.0"
   }
